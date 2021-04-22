@@ -1,0 +1,26 @@
+FUNCTION sort(VAR array : ARRAY_OF INTEGER )
+VAR
+   j,i,n,index : INTEGER;
+   n := array.length;
+BEGIN
+   FORi FROM 0 to n-1 DO
+   Write('Print Array :')
+   Read(array[i]);
+   Write('Pick el to insert :')
+   Read(index);
+   END_FOR;
+
+   index:= array[i];
+   j := i-1;
+   WHILE(j>=0 and index < arr[j]) DO
+   arr[j+1] = arr[j]
+   j := j-1
+   arr[j+1] := index
+   END_WHILE
+
+   Write ("Sorted array is:")
+   FOR i FROM 0 to i-1
+   Write ('Print Array :' array[i])
+   END_FOR
+
+END   
