@@ -10,7 +10,7 @@ BEGIN
    Read(index);
    END_FOR;
     
-   FOR i FROM 0 to i-1 DO
+   FOR i FROM 1 to n DO
    index:= array[i];
    j := i-1;   // j=1-1=0
    WHILE(j ==0 and index < arr[j]) DO
@@ -20,7 +20,7 @@ BEGIN
    END_WHILE;
    END_FOR;
   
-  FOR i FROM 0 to n Do
+  FOR i FROM 0 to i-1 Do
    arr[j+1] := index; 
    return -1 ; // we don't find element
    END_FOR;
